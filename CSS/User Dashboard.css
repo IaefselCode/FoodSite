@@ -1,0 +1,517 @@
+*{
+    box-sizing: border-box;
+}
+
+
+@keyframes cont {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+div.personalinput{
+    animation: cont 0.5s 1s linear backwards;
+}
+div.personal{
+    animation: cont 0.5s 1.5s linear backwards;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family:Segoe UI Emoji;
+}
+div.nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border: none;
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(food3.jpg);
+}
+
+div.ul li {
+    top: 0px;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+ul.navlist {
+    display: flex;
+}
+
+ul.navlist>li {
+    flex-flow: row nowrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.A,
+a.B,
+a.C,
+a.D {
+    margin: 0 20px;
+}
+
+a.D {
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid red;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+a.B,
+a.A,
+a.C {
+    color: white;
+    font-size: 17px;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+a.A:hover,
+a.B:hover,
+a.C:hover,
+a.D:hover {
+    font-size: 19px;
+    font-weight: bolder;
+    color: red;
+}
+
+input[type="search"] {
+    background: transparent;
+    backdrop-filter: blur(100px);
+    height: 42px;
+    width: 200px;
+    outline: none;
+    border: 1px solid rgb(111, 103, 103);
+    border-radius: 8px;
+    color: white;
+
+    font-size: 20px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    margin: 31px 30px 0 0;
+}
+
+input[type="search"]:hover,
+input[type="search"]:focus {
+    width: 205px;
+    border: 2px solid red;
+}
+
+button.btn1,
+button.btn2 {
+    margin: 10px 10px 0;
+}
+
+button.btn1 {
+    font-size: 15px;
+    color: white;
+    height: 42px;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    background: red;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+button.btn1:hover {
+    border: 1px solid white;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+button.btn2 {
+    height: 42px;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+button.btn2:hover {
+    border: none;
+    background: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+section {
+    background: url(https://preview.redd.j);
+    background-size: cover;
+    height: calc(100vh-80px);
+}
+
+@media (max-width:952px) {
+    ul.navlist li a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1100px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul.navlist {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000b6;
+        top: 34px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        margin: 50px 0;
+        transition: all 0.4s;
+    }
+
+    ul.navlist li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    ul.navlist li a {
+        font-size: 30px;
+        transition: all;
+    }
+
+    a.A:hover,
+    a.B:hover,
+    a.C:hover,
+    a.D:hover {
+        background: none;
+        color: red;
+        font-size: 35px;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.menuicon {
+    margin: 25px 0 0 25px;
+}
+main.main {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    padding:5px 0 0;
+    background: radial-gradient(circle at bottom right, red, 20%, black 90%);
+}
+
+.p1 {
+    font-size: 65px;
+    color: white;
+    padding: 0;
+}
+
+div.infodisplay {
+    display: flex;
+    flex-flow:row wrap;
+    width: 100%;
+}
+div.personal {
+    height:900px;
+    width: 35%;
+    background: #EAECEB;
+    margin: 105px 20px 0 20px;
+    border: none;
+    border-radius: 10px;
+    flex-basis: 35%;
+    justify-content: center;
+}
+.personal .first{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+
+}
+
+.personal .first .img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.personal .second{
+    width:100%;
+    height: 61%;
+    padding: 20px;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.personal .second p{
+    font-size:larger;
+}
+
+button#Remove{
+    height:50px;
+    width: 100px;
+    border: none;
+    color: white;
+    background-color: red;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+div.personalinput {
+    width: 60%;
+    margin:27px 0 0 20px;
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 60%;
+}
+
+div.words {
+    margin: 5px 0 10px 30px;
+}
+
+div.info {
+    width: 97%;
+    background: #EAECEB;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+}
+input{
+    font-size: 18px;
+}
+input.file {
+    width: 90%;
+    height: 50px;
+    background: white;
+    border: #EAECEB;
+    border-radius: 5px;
+    align-content: center;
+    margin: 20px;
+    padding: 0 0 0 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.flex {
+    width: 300px;
+    height: 50px;
+    background: white;
+    border: #EAECEB;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px;
+    font-size: 18px;
+    transition: all 1s;
+
+}
+
+button.submit {
+    height: 60px;
+    width: 200px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    margin: 0 0 0 50px;
+    box-shadow: -6px -6px 10px #f9f9f9,
+        6px 6px 10px #00000026;
+}
+
+button.submit:hover {
+    box-shadow: 3px 3px 10px #f9f9f9,
+        -3px -3px 10px #00000026;
+
+}
+div.mostpopular {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+div.popular {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow:1;
+    flex-shrink:1;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    background: #EAECEB;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition:all 0.5s;
+    order: 3;
+}
+
+div.popular:hover {
+    box-shadow: 1px 1px 10px 1px black;
+    background: white;
+}
+
+img.j {
+    border-radius: 15px;
+    height: 172px;
+    width: 175px;
+    max-width: 100%;
+    margin: 10px 0 0 10px;
+    flex-grow: 1;
+}
+p.p {
+    line-height: 25px;
+    flex-grow: 1;
+}
+
+.add {
+    border: 2px solid red;
+    border-radius: 10px;
+    background: transparent;
+    color: red;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    flex-grow: 1;
+    transition:all 0.25s;
+}
+.add:hover{
+color:white;
+background: red;
+}
+
+.remove{
+    border: 2px solid red;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: all 0.25s;
+}
+.remove:hover{
+    color:red;
+    background:white;
+}
+
+.lightbox {
+    display: table;
+    /* helps us center the lightbox-content */
+    /* make the lightbox occupy the entire page */
+    position: fixed;
+    top: -150%;
+    /* position the lightbox above the top edge */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* black with 0.7 opacity */
+    transition-duration: 0.5s;
+    /* set the duration of the slide down effect */
+}
+
+.lightbox:target {
+    top: 0;
+    /* cover the entire screen */
+}
+
+.lightbox-content {
+    display: table-cell;
+    vertical-align: middle;
+    /* vertically center */
+    text-align: center;
+    /* horizontally center */
+}
+
+.close {
+    /* position the CLOSE button to the top-right corner */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    /* style the close button */
+    font-size: 20px;
+    font-weight: 300px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s all;
+}
+
+/* make the image responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+@media screen and (max-width:350px) {
+    div {
+        display: block;
+        width: 100%;
+    }
+}
+input[type="email"]:invalid{
+    color: red;
+}

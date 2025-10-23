@@ -1,0 +1,1092 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-repeat: repeat;
+    min-height: 100%;
+    background-size: 100%;
+    font-size: 30px;
+    font-family: Segoe UI Emoji;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    background: red;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.location {
+    margin-left: 180px;
+}
+
+.navigation-dropdown {
+    flex-grow: 1;
+}
+
+select.Dropdown {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-right: 60px;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+select.Dropdown:hover {
+    font-size: 23px;
+}
+
+div.P1,
+div.P2 {
+    display: flex;
+    flex-grow: 5;
+    color: white;
+    font-size: 19px;
+}
+
+div.nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border: none;
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(food3.jpg);
+}
+
+div.ul li {
+    top: 0px;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+ul.navlist {
+    display: flex;
+}
+
+ul.navlist>li {
+    flex-flow: row nowrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.A,
+a.B,
+a.C,
+a.D {
+    margin: 0 20px;
+}
+
+a.A {
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid red;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+a.B,
+a.C,
+a.D {
+    color: white;
+    font-size: 17px;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+a.A:hover,
+a.B:hover,
+a.C:hover,
+a.D:hover {
+    font-size: 19px;
+    font-weight: bolder;
+    color: red;
+}
+
+input[type="search"] {
+    background: transparent;
+    backdrop-filter: blur(100px);
+    height: 42px;
+    width: 200px;
+    border: 1px solid rgb(111, 103, 103);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    font-size: 20px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    margin: 31px 30px 0 0;
+}
+
+input[type="search"]:hover,
+input[type="search"]:focus {
+    width: 205px;
+    border: 2px solid red;
+}
+
+button.btn1,
+button.btn2 {
+    margin: 31px 10px 0;
+}
+
+button.btn1 {
+    font-size: 15px;
+    color: white;
+    height: 42px;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    background: red;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+button.btn1:hover {
+    border: 1px solid white;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+button.btn2 {
+    height: 42px;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+button.btn2:hover {
+    border: none;
+    background: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+main.main {
+    background: radial-gradient(circle at bottom right, red, 20%, black 90%);
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+div.first {
+    flex-grow: 1;
+    text-align: left;
+    margin: 60px 0 0 70px;
+    width: 48%;
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes anime2 {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+div.first-first {
+    animation: anime 0.5s 0.5s linear backwards;
+}
+
+div.first-first-bit {
+    animation: anime 0.5s 1s linear backwards;
+}
+
+div.first-second {
+    animation: anime 0.5s 1.5s linear backwards;
+}
+
+div.first-third {
+    animation: anime 0.5s 2s linear backwards;
+}
+
+div.second-first {
+    animation: anime2 0.5s 2.5s linear backwards;
+}
+
+
+.P5,
+.P4 {
+    font-size: 50PX;
+    font-weight: 100;
+    color: white;
+}
+
+.P6 {
+    color: transparent;
+    font-size: 50PX;
+    font-weight: bolder;
+    background: linear-gradient(to right, RED, PINK);
+    background-clip: text;
+}
+
+.P7 {
+    color: white;
+    font-size: 15px;
+}
+
+div.container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-shrink: 1;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 6px black;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    flex-grow: 0.0625;
+}
+
+button.Item1 {
+    color: white;
+    background: red;
+    height: 50px;
+    width: 130px;
+    font-size: 18px;
+    font-family: arial;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    flex-grow: 2;
+}
+
+button.Item1:hover {
+    cursor: pointer;
+    color: red;
+    background: white;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 65px;
+    width: 135px;
+}
+
+button.Item2,
+button.Item3 {
+    cursor: pointer;
+    color: red;
+    background: white;
+    height: 50px;
+    width: 130px;
+    font-size: 18px;
+    font-family: arial;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+button.Item2:hover,
+button.Item3:hover {
+    color: white;
+    background: red;
+    font-size: 22px;
+    height: 65px;
+    width: 135px;
+}
+
+div.second {
+    width: 45%;
+    flex-grow: 1;
+    margin: 10px 0 0 0;
+}
+
+img.burgerimage {
+    max-width: 100%;
+    height: auto;
+    background: transparent;
+    filter: drop-shadow(2px 2px 10px 2px black);
+}
+
+div.categories {
+    width: 100%;
+    background: whitesmoke;
+}
+
+div.Ourcategories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+}
+
+div.our,
+p.our {
+    font-size: 70px;
+    font-weight: bolder;
+    margin-top: 70px;
+}
+
+@keyframes button {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+button.btn3 {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 95px;
+    cursor: pointer;
+    animation: button 0.65s infinite;
+}
+
+button.btn3:hover {
+    background-color: black;
+    color: white;
+}
+
+div.Foods {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 95%;
+}
+
+button.btn4 {
+    border: none;
+    border-radius: 20px;
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: inset 0px 2px 10px 0px black;
+}
+
+button.btn4:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 2px 10px 1px black;
+}
+
+b.bolded {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+div.images {
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+div.img1 {
+    background-image: url(R.jpeg);
+    background-size: cover;
+    width: 38%;
+    height: 380px;
+    border: 3px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 3px 40px black;
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+}
+
+div.hover-content1 {
+    width: 100%;
+    height: 375px;
+    padding: 45px;
+    color: red;
+    font-size: 19px;
+    border-radius: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-flow: row wrap;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+div.img1:hover>.hover-content1 {
+    opacity: 1;
+}
+
+.pp1 {
+    font-size: 27px;
+    color: white;
+    text-shadow: 2px 1px 2px red;
+    font-weight: bolder;
+    font-family: cooper black;
+}
+
+button.btn5 {
+    height: 45px;
+    width: 105px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button.btn5:hover {
+    background: transparent;
+    backdrop-filter: blur(100px);
+    width: 115px;
+    height: 50px;
+}
+
+div.img2 {
+    background-image: url(Main1BG.jpg);
+    background-size: cover;
+    width: 58%;
+    height: 380px;
+    border: 3px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 3px 40px black;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+div.hover-content2 {
+    width: 100%;
+    height: 375px;
+    padding: 45px;
+    color: red;
+    font-size: 19px;
+    border-radius: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-flow: row wrap;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+div.img2:hover>.hover-content2 {
+    opacity: 1;
+}
+
+.pp2 {
+    font-size: 27px;
+    color: white;
+    text-shadow: 2px 1px 2px red;
+    font-weight: bolder;
+    font-family: cooper black;
+}
+
+
+div.clients {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(clientsphoto.jpg);
+    background-size: cover;
+    text-align: center;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+p.clients-heading {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Baskerville Old Face;
+    width: 100%;
+    margin: 50px auto 0;
+    color: #EAECEB;
+}
+
+div.clients-suggestion {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.profile1 {
+    width: 280px;
+    border: 1px solid #EAECEB;
+    border-radius: 20px;
+    margin: 30px 10px 100px;
+    flex-grow: 1;
+    /*transition: 1s all;*/
+}
+
+/*
+div.profile1:hover {
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+*/
+
+div.profile1>p {
+    color: #EAECEB;
+    font-size: 20px;
+}
+
+img.JohnSon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px 1px, 1px -2px -2px 1px white;
+}
+
+
+div.mostpopular {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+div.popular {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-between;
+    border: none;
+    border-radius: 15px;
+    background: #EAECEB;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+div.popular:hover {
+    box-shadow: 1px 1px 10px 1px black;
+    background: white;
+}
+
+.popular1 {
+    width: 35%;
+    margin: 2.5px;
+}
+
+.popular2 {
+    width: 60%;
+    margin: 2.5px;
+}
+
+img.j {
+    border-radius: 15px;
+    height: 200px;
+    max-width: 100%;
+    width: 210px;
+    margin: 10px 0 10px 10px;
+    flex-grow: 1;
+}
+
+p.p1 {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+p.p2,
+p.p3 {
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+p.p3 {
+    margin-bottom: 45px;
+}
+
+p.p1,
+p.p2,
+p.p3 {
+    line-height: 5px;
+    flex-grow: 1;
+}
+
+.span1 {
+    font-weight: bold;
+}
+
+.span2 {
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.add {
+    border: 2px solid red;
+    border-radius: 10px;
+    background: transparent;
+    color: red;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0 10px 0 0; 
+    flex-grow: 1;
+    transition: all 0.25s;
+}
+
+.add:hover {
+    color: white;
+    background: red;
+}
+
+.remove {
+    border: 2px solid red;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: all 0.25s;
+}
+
+.remove:hover {
+    color: red;
+    background: white;
+}
+
+.lightbox {
+    display: table;
+    /* helps us center the lightbox-content */
+    /* make the lightbox occupy the entire page */
+    position: fixed;
+    top: -150%;
+    /* position the lightbox above the top edge */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* black with 0.7 opacity */
+    transition-duration: 0.5s;
+    /* set the duration of the slide down effect */
+}
+
+.lightbox:target {
+    top: 0;
+    /* cover the entire screen */
+}
+
+.lightbox-content {
+    display: table-cell;
+    vertical-align: middle;
+    /* vertically center */
+    text-align: center;
+    /* horizontally center */
+}
+
+.close {
+    /* position the CLOSE button to the top-right corner */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    /* style the close button */
+    font-size: 20px;
+    font-weight: 300px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s all;
+}
+
+/* make the image responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.mainaddcardbtn {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #37373a;
+    margin-top: 20px;
+    margin-bottom: -2px;
+    padding-top: -2px;
+}
+
+.addcardbtn {
+    height: 60px;
+    width: 205px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.addcardbtn:hover {
+    height: 75px;
+    width: 225px;
+    font-size: 23px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(food3.jpg);
+}
+
+.addcardbtndiv {
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+.firstaddcardbtn,
+.secondaddcardbtn {
+    background-color: #37373a;
+    width: 43%;
+    height: 60px;
+}
+
+
+.footer {
+    background-color: #37373a;
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .footer-content div {
+    margin: 10px;
+}
+
+.footer .footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer .footer-content p,
+.footer .footer-content a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer .footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #6c757d;
+    font-size: 24px;
+}
+
+.footer .social-icons a:hover {
+    color: red;
+}
+
+
+
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+section {
+    background: url(https://preview.redd.j);
+    background-size: cover;
+    height: calc(100vh-80px);
+}
+
+@media (max-width:952px) {
+    ul.navlist li a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1150px) {
+    .checkbtn {
+        display: block;
+        margin-top: 8px;
+    }
+
+    ul.navlist {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000b6;
+        top: 40px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        margin: 50px 0;
+        transition: all 0.4s;
+    }
+
+    ul.navlist li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    ul.navlist li a {
+        font-size: 30px;
+        transition: all;
+    }
+
+    a.A:hover,
+    a.B:hover,
+    a.C:hover,
+    a.D:hover {
+        background: none;
+        color: red;
+        font-size: 35px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.menuicon {
+    margin: 25px 0 0 25px;
+}
+
+
+#map {
+    width: 95%;
+    height: 700px;
+    margin: 0 0 30px 0;
+    box-shadow: inset 2px 2px 30px 5px black;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.locat {
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 30px;
+}
+
+
+/*Addcard Animations*/
+.lightbox2 {
+    display: table;
+    /* helps us center the lightbox-content */
+    /* make the lightbox occupy the entire page */
+    position: fixed;
+    bottom: -150%;
+    /* position the lightbox above the top edge */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* black with 0.7 opacity */
+    transition-duration: 0.25s;
+    /* set the duration of the slide down effect */
+}
+
+.lightbox2:target {
+    bottom: 0;
+    /* cover the entire screen */
+}
+
+.lightbox-content2 {
+    display: table-cell;
+    vertical-align: top;
+    /* vertically center */
+    text-align: center;
+    /* horizontally center */
+}
+
+.close2 {
+    transition: 1s all;
+}
+
+.themarginer {
+    margin: 50px;
+}
+
+/*Card Adder Styles*/
+div.Form {
+    width: 50%;
+    height: auto;
+    box-shadow: 2px 2px 10px 1px black;
+    border-radius: 15px;
+    margin: auto ;
+    padding:2px 10px;
+    background: #e6e9ec;
+    animation: cont 0.5s 1s linear backwards;
+}
+
+.theforminputs {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+@media (max-width:925px) {
+    div.Form {
+        width: 90%;
+    }
+}
+
+
+h1.itsh1 {
+    font-size: 40px;
+}
+
+input#food-picture,
+input#food-name,
+input#food-cost,
+input#user-name,
+input#user-password,#flavour
+{
+    width: 40%;
+    height: 45px;
+    margin: 5px;
+    outline: none;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    align-content: center;
+    padding: 0 0 0 15px;
+    flex-grow: 1;
+    transition: 0.5s all;
+}
+
+/*check box animation*/
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    height: 25px;
+    width: 40px;
+    background-color: white;
+    border-radius: 5rem;
+    transition: background-color .2;
+    box-shadow: 0 0 15px #0000001e;
+    cursor: pointer;
+    border: 3px solid rgb(47, 47, 68);
+    user-select: none;
+}
+
+input[type="checkbox"]::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: rgb(47, 47, 68);
+    transition: left .2s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(255, 100, 53);
+}
+
+input[type="checkbox"]:checked::after {
+    left: 70%;
+}
+
+/*toggle dark theme*/
+body {
+    --primary-page-bg: white;
+    background-color: var(--primary-page-bg);
+}
+
+/*
+#check1,#check2{
+font-size:20px;
+}*/
+
+button[type="submit"] {
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 10px 2px black;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    margin: 5px 0;
+    flex-shrink: 2;
+    transition: 0.5s all;
+}
+
+button[type="submit"]:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(food3.jpg);
+    color: #e6e9ec;
+}
+
+p.addcd {
+    font-size: medium;
+}

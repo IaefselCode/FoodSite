@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Login.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="ul">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" height="30px"
+                    viewBox="0 0 50 50" style="fill:#FFFFFF;">
+                    <path
+                        d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+                    </path>
+                </svg>
+            </label>
+            <ul class="navlist">
+                <li><a href="index.html" class="A">Home</a></li>
+                <li><a href="Menu.html" class="B">Menu</a></li>
+                <li><a href="Pages.html" class="C">Pages</a></li>
+                <li><a href="User Dashboard.html" class="D">User Dashboard</a></li>
+            </ul>
+        </div>
+        <div><a href="Login.html"><button class="btn1">Log In</button></a></div>
+        <div><a href="Sign Up.html"><button class="btn2">Sign Up</button></a></div>
+    </div>
+    <div class="fieldset">
+        <div class="login">
+            <p class="p1">
+                <b>
+                    <legend>
+                        <font size="5px">Welcome back</font>
+                    </legend>
+                </b><br>
+                <font size="4px" color="silver">welcome back! Please enter your details</font>
+            </p>
+            <div class="input">
+                <form action="">
+                    <p class="text">UserName:</p>
+                    <input type="text" placeholder="UserName" id="UserName" name="UserName" class="a" autocomplete="address-level1" required><br><br>
+                    <p class="text">Password:</p>
+                    <input type="Password" placeholder="  Password" id="Password" name="Password"  class="b" required><br>
+                    <div class="pf">
+                        <p>
+                            <input type="checkbox" class="check" id="check1" name="check">
+                            <font class="checkw">Remember me</font>
+                        </p>
+                        <p> <a href="New Password.html" class="forgotpassword">Forgot
+                                Password?</a></p>
+                    </div>
+
+                    <button class="button1">Sign In</button><br>
+                </form>
+                <button class="button2">Continue with Google</button><br>
+                <p class="p2">
+                    <font color="red">Dont have an account?</font> <a href="Sign Up.html" class="signup"><u>Sign up
+                            for free</u></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

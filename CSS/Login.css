@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes cont {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+div.fieldset{
+    animation: cont 0.5s 1s linear backwards;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family:Segoe UI Emoji;
+}
+
+div.nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border: none;
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(food3.jpg);
+}
+
+div.ul li {
+    top: 0px;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+ul.navlist {
+    display: flex;
+}
+
+ul.navlist>li {
+    flex-flow: row nowrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.A,
+a.B,
+a.C,
+a.D {
+    margin: 0 20px;
+}
+
+ 
+a.B,
+a.A,
+a.C,
+a.D{
+    color: white;
+    font-size: 17px;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+a.A:hover,
+a.B:hover,
+a.C:hover,
+a.D:hover {
+    font-size: 19px;
+    font-weight: bolder;
+    color: red;
+}
+
+
+button.btn1,
+button.btn2 {
+    margin: 10px 10px 0;
+}
+
+button.btn1 {
+    font-size: 15px;
+    color: white;
+    height: 42px;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    background: red;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+button.btn1:hover {
+    border: 1px solid white;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+button.btn2 {
+    height: 42px;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+button.btn2:hover {
+    border: none;
+    background: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+section {
+    background: url(https://preview.redd.j);
+    background-size: cover;
+    height: calc(100vh-80px);
+}
+
+@media (max-width:952px) {
+    ul.navlist li a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1100px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul.navlist {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000b6;
+        top: 34px;
+        left: -100%;
+        text-align: center;
+        display: block;
+        margin: 50px 0;
+        transition: all 0.4s;
+    }
+
+    ul.navlist li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    ul.navlist li a {
+        font-size: 30px;
+        transition: all;
+    }
+
+    a.A:hover,
+    a.B:hover,
+    a.C:hover,
+    a.D:hover {
+        background: none;
+        color: red;
+        font-size: 35px;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.menuicon {
+    margin: 25px 0 0 25px;
+}
+
+div.login {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.p1 {
+    margin-left: 100px;
+}
+
+div.input {
+    display: flex;
+    flex-flow: column;
+    margin-left: 100px;
+}
+
+input.a,
+input.b {
+    width: 85%;
+    height:65px;
+    font-size: 20px;
+    border: 2px solid rgb(187, 181, 181);
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.5s;
+    padding: 0 0 0 15px;
+}
+
+input.a:hover,
+input.b:hover {
+    height: 68px;
+    font-size: 25px;
+}
+.pf{
+    display:flex;
+    width: 83%;
+    justify-content: space-between;
+}
+input.check {
+    height: 18px;
+    width: 18px;
+}
+.checkw{
+    font-size: x-large;
+}
+a.forgotpassword {
+    text-decoration: none;
+    font-size: x-large;
+    color: red;
+    transition: all 0.5s;
+}
+
+button {
+    width: 85%;
+    height: 65px;
+    border-radius: 12px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+button.button1 {
+    color: white;
+    background: red;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button.button1:hover {
+    color: black;
+    background: white;
+    height: 68px;
+}
+
+button.button2 {
+    color: black;
+    background: white;
+    border: 1px solid silver;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button.button2:hover {
+    height: 68px;
+}
+
+.p2,.text {
+font-size:larger;
+}
+a.signup {
+    text-decoration: none;
+    color: black;
+}
