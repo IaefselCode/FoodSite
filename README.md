@@ -2,8 +2,6 @@
 
 A modern, responsive food website built with pure HTML, CSS, and JavaScript. This project features a clean design with smooth animations and an intuitive user interface.
 
-![Food Site Preview](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/food-site-virid.vercel.app_.png-NcI1u0CYgb5mCdQtpolR5MpBhaegDE.jpeg)
-
 ## Features
 
 - **Pure Vanilla Stack**: Built with HTML5, CSS3, and vanilla JavaScript
